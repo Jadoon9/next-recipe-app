@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const NotFound = () => {
-  const redirect = useRouter();
+  const router = useRouter();
   useEffect(() => {
     setTimeout(() => {
-      redirect('/');
+      router.push('/');
     }, 4000);
   }, []);
   return (
